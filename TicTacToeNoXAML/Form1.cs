@@ -18,9 +18,9 @@ namespace TicTacToeNoXAML
             game = new Game();
             game.GameOver += Game_GameOver;
             initializeGameSettings();
-            emptyFieldFile = @"C:\Users\Damian\Documents\Visual Studio 2015\Projects\TicTacToe\TicTacToeNoXAML\Fields\emptyField.jpg";//how to get files from ms-appx?
-            OFieldFile = @"C:\Users\Damian\Documents\Visual Studio 2015\Projects\TicTacToe\TicTacToeNoXAML\Fields\OField.jpg";
-            XFieldFile = @"C:\Users\Damian\Documents\Visual Studio 2015\Projects\TicTacToe\TicTacToeNoXAML\Fields\XField.jpg";
+            emptyFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\emptyField.jpg";//how to get files from ms-appx?
+            OFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\OField.jpg";
+            XFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\XField.jpg";
         }
 
         private Game game;
