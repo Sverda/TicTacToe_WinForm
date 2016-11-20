@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MASTERRACEPC</Machine>
+    <WindowsUser>Damian</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>227c2133-88d5-4c03-9e11-1e02ebe6045c</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Damian</PackageIdentityPublisher>
+    <IntermediateOutputPath>c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>D26B171D774BA5B03B0DEF0E0A342F0732100D7733C9EADEE7BE39ED8D351BDC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>227c2133-88d5-4c03-9e11-1e02ebe6045c_1.0.0.0_neutral__zkjhe9sn2b5qc</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>227c2133-88d5-4c03-9e11-1e02ebe6045c_zkjhe9sn2b5qc!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>227c2133-88d5-4c03-9e11-1e02ebe6045c</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Damian</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-11-11T13:27:47.308</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\TicTacToe.Windows.exe">
+      <PackagePath>TicTacToe.Windows.exe</PackagePath>
+      <Modified>2016-11-11T13:48:10.462</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\Assets\Fields\emptyField.jpg">
+      <PackagePath>Assets\Fields\emptyField.jpg</PackagePath>
+      <Modified>2016-11-11T10:20:37.881</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\Assets\Fields\OField.jpg">
+      <PackagePath>Assets\Fields\OField.jpg</PackagePath>
+      <Modified>2016-11-11T10:20:37.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\Assets\Fields\XField.jpg">
+      <PackagePath>Assets\Fields\XField.jpg</PackagePath>
+      <Modified>2016-11-11T10:20:37.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\TicTacToe.Windows.xr.xml">
+      <PackagePath>TicTacToe.Windows.xr.xml</PackagePath>
+      <Modified>2016-11-11T13:17:11.996</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2016-11-11T13:27:47.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\GamePage.xbf">
+      <PackagePath>GamePage.xbf</PackagePath>
+      <Modified>2016-11-11T13:27:47.101</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-11-11T13:27:47.225</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

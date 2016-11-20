@@ -1,0 +1,10 @@
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.g.i.cs
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.g.cs
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.g.i.cs
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.g.cs
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.xaml
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.xaml
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.xbf
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.xbf
+c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
