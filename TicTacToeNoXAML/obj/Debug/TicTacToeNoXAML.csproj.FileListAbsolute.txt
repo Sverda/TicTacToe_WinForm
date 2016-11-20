@@ -7,3 +7,6 @@ c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToeNoXAML\
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToeNoXAML\obj\Debug\TicTacToeNoXAML.csproj.GenerateResource.Cache
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToeNoXAML\obj\Debug\TicTacToeNoXAML.exe
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToeNoXAML\obj\Debug\TicTacToeNoXAML.pdb
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\bin\Debug\TicTacToeNoXAML.exe.config
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\obj\Debug\TicTacToeNoXAML.exe
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\obj\Debug\TicTacToeNoXAML.pdb
