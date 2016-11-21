@@ -15,36 +15,23 @@ namespace TicTacToeNoXAML
         public Form1()
         {
             InitializeComponent();
-            game = new Game();
-            game.GameOver += Game_GameOver;
-            initializeGameSettings();
             emptyFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\emptyField.jpg";//how to get files from ms-appx?
             OFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\OField.jpg";
             XFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\XField.jpg";
         }
-
+        
         private Game game;
         private string emptyFieldFile;
         private string OFieldFile;
         private string XFieldFile;
-        private GameSettings gameSettings;
-        private void initializeGameSettings()
-        {
-            bool versus;
-            if (chooseVsComputer.Checked)
-                versus = true;
-            else
-                versus = false;
-            gameSettings = new GameSettings(playerOneName.Text, playerTwoName.Text, versus);
-        }
 
         private void Game_GameOver(object sender, EventArgs e)
         {
             GameOverEventArgs tempE = e as GameOverEventArgs;
             if (tempE.winner == false)
-                MessageBox.Show("Winner is " + gameSettings.Name1);
+                MessageBox.Show("Winner is " + game.GetPlayer1Name);
             else
-                MessageBox.Show("Winner is " + gameSettings.Name2);
+                MessageBox.Show("Winner is " + game.GetPlayer2Name);
             updateControls(false);
         }
 
@@ -64,15 +51,14 @@ namespace TicTacToeNoXAML
             playButton.Enabled = !enabled;
             chooseVsPlayer.Enabled = !enabled;
             chooseVsComputer.Enabled = !enabled;
-            //hardModeOption.Enabled = enabled;
         }
 
         private void updateLabel()
         {
             if (!game.Whosturn)
-                whosTurnLabel.Text = gameSettings.Name1 + " turn - X ";
+                whosTurnLabel.Text = game.GetPlayer1Name + " turn - X ";
             else
-                whosTurnLabel.Text = gameSettings.Name2 + " turn - O ";
+                whosTurnLabel.Text = game.GetPlayer2Name + " turn - O ";
         }
 
         private void field0x0_Click(object sender, EventArgs e)//pictureBoxs has to be 'binding' with fields in Game class
@@ -167,8 +153,9 @@ namespace TicTacToeNoXAML
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            game.ResetGame();
-            initializeGameSettings();
+            game = new Game(playerOneName.Text, playerTwoName.Text, chooseVsComputer.Checked);
+            game.GameOver -= Game_GameOver;//don't duplicate event handler
+            game.GameOver += Game_GameOver;
             updateControls(true);
         }
 

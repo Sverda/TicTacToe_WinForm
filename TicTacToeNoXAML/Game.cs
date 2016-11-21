@@ -9,19 +9,40 @@ namespace TicTacToeNoXAML
 {
     class Game
     {
-        private bool whosturn;//false-first player, true-second player
+        private Player player1;
+        private Player player2;
+        private bool whosturn;
         public bool Whosturn { get { return whosturn; } }
         private bool?[,] fields;
         public bool?[,] Fields { get { return fields; } }
+        //methods to create AI or player object
 
-        public Game()
+        public Game(string player1name, string player2name, bool vsPlayer)
         {
-            whosturn = false;
+            if (player1name != player2name)//players' name have to be diffrent. 
+            {
+                player1 = new Player(player1name, true);
+            }
+            else
+            {
+                player1 = new Player(player1name + "2", true);
+            }
+            whosturn = player1.Mark;
+            if (vsPlayer)
+            {
+                player2 = new Player(player2name, false);
+            }
+            else
+            {
+                player2 = new AI(player2name, false);
+            }
             fields = new bool?[3, 3];
-            ResetGame();
+            SetBlanks();
         }
+        public string GetPlayer1Name { get { return player1.Name; } }
+        public string GetPlayer2Name { get { return player2.Name; } }
 
-        public void ResetGame()
+        private void SetBlanks()
         {
             for (int i = 0; i < 3; i++)
             {
@@ -83,7 +104,7 @@ namespace TicTacToeNoXAML
         {
             EventHandler gameOver = GameOver;
             if (gameOver != null)
-                gameOver(this, new GameOverEventArgs(whosturn));
+                gameOver(this, new GameOverEventArgs(whosturn));//adapt to new Player event
         }
     }
 }

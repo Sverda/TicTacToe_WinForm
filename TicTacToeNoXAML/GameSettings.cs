@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicTacToeNoXAML
 {
-    class GameSettings
+    class GameSettings//needless
     {
         public GameSettings(string firstName, string secondName, bool versus)
         {
