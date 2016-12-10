@@ -64,7 +64,7 @@ namespace TicTacToeNoXAML
                 whosturn = true;
         }
 
-        private bool checkWinsConditions()
+        private bool checkWinsConditions()// TODO:Algorithm doesn't check which mark belong to which player
         {
             int countMatches = 0;//if player's mark has three matches than count is equal 3
             for (int column = 0; column < 3; column++)//vertical matches

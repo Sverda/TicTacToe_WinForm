@@ -12,14 +12,26 @@ namespace TicTacToeNoXAML
 {
     public partial class Form1 : Form
     {
+        //TODO: Add menu bar
         public Form1()
         {
             InitializeComponent();
-            emptyFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\emptyField.jpg";//how to get files from ms-appx?
-            OFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\OField.jpg";
-            XFieldFile = @"C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToeNoXAML\Fields\XField.jpg";
+            string exePath = getCurrentProjectDirectory();
+            emptyFieldFile = exePath + "Fields\\emptyField.jpg";    // TODO: Exception for wrong files' paths. And give users option to change pictures
+            OFieldFile = exePath + "Fields\\OField.jpg";
+            XFieldFile = exePath + "Fields\\XField.jpg";
+            
         }
-        
+
+        //"C:\\Users\\Damian\\Dropbox\\Projects\\TicTacToe\\TicTacToeNoXAML\\bin\\Debug"
+        private string getCurrentProjectDirectory()
+        {
+            string exePath = Environment.CurrentDirectory;
+            const string removeString = "bin\\Debug";
+            int index = exePath.IndexOf(removeString);
+            return exePath.Substring(0, index);
+        }
+
         private Game game;
         private string emptyFieldFile;
         private string OFieldFile;
