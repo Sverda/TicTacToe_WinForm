@@ -12,15 +12,46 @@ namespace TicTacToeNoXAML
 {
     public partial class Form1 : Form
     {
-        //TODO: Add menu bar
+        // TODO: Add menu bar
         public Form1()
         {
             InitializeComponent();
             string exePath = getCurrentProjectDirectory();
-            emptyFieldFile = exePath + "Fields\\emptyField.jpg";    // TODO: Exception for wrong files' paths. And give users option to change pictures
+            formField = new PictureBox[3, 3];
+            formField[0, 0] = field0x0;
+            formField[0, 1] = field0x1;
+            formField[0, 2] = field0x2;
+            formField[1, 0] = field1x0;
+            formField[1, 1] = field1x1;
+            formField[1, 2] = field1x2;
+            formField[2, 0] = field2x0;
+            formField[2, 1] = field2x1;
+            formField[2, 2] = field2x2;
+            // TODO: Exception for wrong files' paths. And give users option to change pictures
+            emptyFieldFile = exePath + "Fields\\emptyField.jpg";
             OFieldFile = exePath + "Fields\\OField.jpg";
             XFieldFile = exePath + "Fields\\XField.jpg";
             
+        }
+
+        private void Game_UpdateForm(object sender, EventArgs e)
+        {
+            MoveEventArgs e_move = e as MoveEventArgs;
+            if (!e_move.Who)
+                formField[e_move.X, e_move.Y].Image = Image.FromFile(XFieldFile);
+            else
+                formField[e_move.X, e_move.Y].Image = Image.FromFile(OFieldFile);
+        }
+
+        private void clearFormFields()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    formField[i, j].Image = Image.FromFile(emptyFieldFile);
+                }
+            }
         }
 
         //"C:\\Users\\Damian\\Dropbox\\Projects\\TicTacToe\\TicTacToeNoXAML\\bin\\Debug"
@@ -33,6 +64,7 @@ namespace TicTacToeNoXAML
         }
 
         private Game game;
+        private PictureBox[,] formField;
         private string emptyFieldFile;
         private string OFieldFile;
         private string XFieldFile;
@@ -42,12 +74,14 @@ namespace TicTacToeNoXAML
             GameOverEventArgs tempE = e as GameOverEventArgs;
             if (tempE.winner == false)
                 MessageBox.Show("Winner is " + game.GetPlayer1Name);
-            else
+            else if (tempE.winner == true)
                 MessageBox.Show("Winner is " + game.GetPlayer2Name);
+            else
+                MessageBox.Show("Draw");
             updateControls(false);
         }
 
-        private void updateControls(bool enabled)//switch on or off fields, buttons, textboxs, radioButtons, checkBox
+        private void updateControls(bool enabled)//switch on or off the controls
         {
             field0x0.Enabled = enabled;
             field0x1.Enabled = enabled;
@@ -65,7 +99,7 @@ namespace TicTacToeNoXAML
             chooseVsComputer.Enabled = !enabled;
         }
 
-        private void updateLabel()
+        private void updateStringLabel()
         {
             if (!game.Whosturn)
                 whosTurnLabel.Text = game.GetPlayer1Name + " turn - X ";
@@ -73,102 +107,69 @@ namespace TicTacToeNoXAML
                 whosTurnLabel.Text = game.GetPlayer2Name + " turn - O ";
         }
 
-        private void field0x0_Click(object sender, EventArgs e)//pictureBoxs has to be 'binding' with fields in Game class
+        private void field0x0_Click(object sender, EventArgs e) //pictureBoxs has to be 'binding' with fields in Game class
         {
-            if (!game.Whosturn)
-                field0x0.Image = Image.FromFile(XFieldFile);
-            else
-                field0x0.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(0, 0);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field0x1_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field0x1.Image = Image.FromFile(XFieldFile);
-            else
-                field0x1.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(0, 1);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field0x2_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field0x2.Image = Image.FromFile(XFieldFile);
-            else
-                field0x2.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(0, 2);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field1x0_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field1x0.Image = Image.FromFile(XFieldFile);
-            else
-                field1x0.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(1, 0);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field1x1_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field1x1.Image = Image.FromFile(XFieldFile);
-            else
-                field1x1.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(1, 1);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field1x2_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field1x2.Image = Image.FromFile(XFieldFile);
-            else
-                field1x2.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(1, 2);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field2x0_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field2x0.Image = Image.FromFile(XFieldFile);
-            else
-                field2x0.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(2, 0);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field2x1_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field2x1.Image = Image.FromFile(XFieldFile);
-            else
-                field2x1.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(2, 1);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void field2x2_Click(object sender, EventArgs e)
         {
-            if (!game.Whosturn)
-                field2x2.Image = Image.FromFile(XFieldFile);
-            else
-                field2x2.Image = Image.FromFile(OFieldFile);
             game.PlayerDidTurn(2, 2);
-            updateLabel();
+            updateStringLabel();
         }
 
         private void playButton_Click(object sender, EventArgs e)
         {
             game = new Game(playerOneName.Text, playerTwoName.Text, chooseVsComputer.Checked);
-            game.GameOver -= Game_GameOver;//don't duplicate event handler
+            game.GameOver -= Game_GameOver; //don't duplicate event handler
             game.GameOver += Game_GameOver;
+            game.UpdateForm -= Game_UpdateForm;
+            game.UpdateForm += Game_UpdateForm;
             updateControls(true);
+            clearFormFields();
         }
 
         private void chooseVsComputer_CheckedChanged(object sender, EventArgs e)
