@@ -30,3 +30,35 @@ c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTac
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\qualifiers.txt.intermediate
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\App.xbf
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\GamePage.xbf
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\TicTacToe.Windows.xr.xml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\TicTacToe.Windows.exe
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\TicTacToe.Windows.pdb
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\resources.pri
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\AppxManifest.xml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\bin\Debug\TicTacToe.Windows.build.appxrecipe
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\App.g.i.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\App.g.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\GamePage.g.i.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\GamePage.g.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\App.xaml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\GamePage.xaml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\App.xbf
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\GamePage.xbf
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\TicTacToe.Windows.exe
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\TicTacToe.Windows.pdb
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\priconfig.xml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\priconfig.xml.intermediate
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\layout.resfiles
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\layout.resfiles.intermediate
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\resources.resfiles
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\resources.resfiles.intermediate
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\pri.resfiles
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\pri.resfiles.intermediate
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\qualifiers.txt
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.Windows\obj\Debug\ProjectArchitectures.txt

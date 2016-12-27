@@ -41,15 +41,15 @@
             this.field2x2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.settingsBox = new System.Windows.Forms.GroupBox();
-            this.playerOneName = new System.Windows.Forms.TextBox();
-            this.playerTwoName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.playButton = new System.Windows.Forms.Button();
             this.vsGroupBox = new System.Windows.Forms.GroupBox();
-            this.chooseVsPlayer = new System.Windows.Forms.RadioButton();
-            this.chooseVsComputer = new System.Windows.Forms.RadioButton();
             this.hardModeOption = new System.Windows.Forms.CheckBox();
+            this.chooseVsComputer = new System.Windows.Forms.RadioButton();
+            this.chooseVsPlayer = new System.Windows.Forms.RadioButton();
+            this.playButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.playerTwoName = new System.Windows.Forms.TextBox();
+            this.playerOneName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.field0x0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.field0x1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.field0x2)).BeginInit();
@@ -206,50 +206,6 @@
             this.settingsBox.TabStop = false;
             this.settingsBox.Text = "Settings";
             // 
-            // playerOneName
-            // 
-            this.playerOneName.Location = new System.Drawing.Point(9, 32);
-            this.playerOneName.Name = "playerOneName";
-            this.playerOneName.Size = new System.Drawing.Size(138, 20);
-            this.playerOneName.TabIndex = 0;
-            this.playerOneName.Text = "Player1";
-            // 
-            // playerTwoName
-            // 
-            this.playerTwoName.Location = new System.Drawing.Point(9, 79);
-            this.playerTwoName.Name = "playerTwoName";
-            this.playerTwoName.Size = new System.Drawing.Size(138, 20);
-            this.playerTwoName.TabIndex = 1;
-            this.playerTwoName.Text = "Player2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "1st player\'s name: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "2nd player\'s name: ";
-            // 
-            // playButton
-            // 
-            this.playButton.Location = new System.Drawing.Point(9, 105);
-            this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(138, 23);
-            this.playButton.TabIndex = 4;
-            this.playButton.Text = "Play";
-            this.playButton.UseVisualStyleBackColor = true;
-            this.playButton.Click += new System.EventHandler(this.playButton_Click);
-            // 
             // vsGroupBox
             // 
             this.vsGroupBox.Controls.Add(this.hardModeOption);
@@ -262,17 +218,16 @@
             this.vsGroupBox.TabStop = false;
             this.vsGroupBox.Text = "Play Versus";
             // 
-            // chooseVsPlayer
+            // hardModeOption
             // 
-            this.chooseVsPlayer.AutoSize = true;
-            this.chooseVsPlayer.Checked = true;
-            this.chooseVsPlayer.Location = new System.Drawing.Point(10, 19);
-            this.chooseVsPlayer.Name = "chooseVsPlayer";
-            this.chooseVsPlayer.Size = new System.Drawing.Size(54, 17);
-            this.chooseVsPlayer.TabIndex = 0;
-            this.chooseVsPlayer.TabStop = true;
-            this.chooseVsPlayer.Text = "Player";
-            this.chooseVsPlayer.UseVisualStyleBackColor = true;
+            this.hardModeOption.AutoSize = true;
+            this.hardModeOption.Enabled = false;
+            this.hardModeOption.Location = new System.Drawing.Point(10, 65);
+            this.hardModeOption.Name = "hardModeOption";
+            this.hardModeOption.Size = new System.Drawing.Size(79, 17);
+            this.hardModeOption.TabIndex = 2;
+            this.hardModeOption.Text = "Hard Mode";
+            this.hardModeOption.UseVisualStyleBackColor = true;
             // 
             // chooseVsComputer
             // 
@@ -286,16 +241,61 @@
             this.chooseVsComputer.CheckedChanged += new System.EventHandler(this.chooseVsComputer_CheckedChanged);
             this.chooseVsComputer.EnabledChanged += new System.EventHandler(this.chooseVsComputer_CheckedChanged);
             // 
-            // hardModeOption
+            // chooseVsPlayer
             // 
-            this.hardModeOption.AutoSize = true;
-            this.hardModeOption.Enabled = false;
-            this.hardModeOption.Location = new System.Drawing.Point(10, 65);
-            this.hardModeOption.Name = "hardModeOption";
-            this.hardModeOption.Size = new System.Drawing.Size(79, 17);
-            this.hardModeOption.TabIndex = 2;
-            this.hardModeOption.Text = "Hard Mode";
-            this.hardModeOption.UseVisualStyleBackColor = true;
+            this.chooseVsPlayer.AutoSize = true;
+            this.chooseVsPlayer.Checked = true;
+            this.chooseVsPlayer.Location = new System.Drawing.Point(10, 19);
+            this.chooseVsPlayer.Name = "chooseVsPlayer";
+            this.chooseVsPlayer.Size = new System.Drawing.Size(54, 17);
+            this.chooseVsPlayer.TabIndex = 0;
+            this.chooseVsPlayer.TabStop = true;
+            this.chooseVsPlayer.Text = "Player";
+            this.chooseVsPlayer.UseVisualStyleBackColor = true;
+            // 
+            // playButton
+            // 
+            this.playButton.Location = new System.Drawing.Point(9, 105);
+            this.playButton.Name = "playButton";
+            this.playButton.Size = new System.Drawing.Size(138, 23);
+            this.playButton.TabIndex = 4;
+            this.playButton.Text = "Play";
+            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "2nd player\'s name (O): ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "1st player\'s name (X): ";
+            // 
+            // playerTwoName
+            // 
+            this.playerTwoName.Location = new System.Drawing.Point(9, 79);
+            this.playerTwoName.Name = "playerTwoName";
+            this.playerTwoName.Size = new System.Drawing.Size(138, 20);
+            this.playerTwoName.TabIndex = 1;
+            this.playerTwoName.Text = "Player2";
+            // 
+            // playerOneName
+            // 
+            this.playerOneName.Location = new System.Drawing.Point(9, 32);
+            this.playerOneName.Name = "playerOneName";
+            this.playerOneName.Size = new System.Drawing.Size(138, 20);
+            this.playerOneName.TabIndex = 0;
+            this.playerOneName.Text = "Player1";
             // 
             // Form1
             // 

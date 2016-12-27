@@ -8,3 +8,13 @@ c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTac
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.xbf
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.xbf
 c:\users\damian\documents\visual studio 2015\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.g.i.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.g.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.g.i.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.g.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.xaml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.xaml
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\App.xbf
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\MainPage.xbf
+C:\Users\Damian\Dropbox\Projects\TicTacToe\TicTacToe\TicTacToe.WindowsPhone\obj\Debug\XamlSaveStateFile.xml

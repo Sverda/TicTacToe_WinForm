@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToe", "TicTacToe", "{46E8E430-66FE-48F6-88C1-BB9AAEC284B7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToeXAML", "TicTacToeXAML", "{46E8E430-66FE-48F6-88C1-BB9AAEC284B7}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TicTacToe.Shared", "TicTacToe\TicTacToe.Shared\TicTacToe.Shared.shproj", "{E2A146C9-7D1E-4E68-93D3-038C26A4178E}"
 EndProject
